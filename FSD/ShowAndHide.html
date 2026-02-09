@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fugit rerum explicabo eaque praesentium laudantium maxime corporis?</p>
+    <button onclick="toggleText()">Show and hide</button>
+
+    <script>
+        function toggleText() {
+            let text = document.getElementById("text");
+            if(text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
