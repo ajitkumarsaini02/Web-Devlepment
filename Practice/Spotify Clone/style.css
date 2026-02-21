@@ -1,4 +1,4 @@
-body{
+ body{
     font-family: "Montserrat", sans-serif;
     margin: 0;
     background-color: #000;
@@ -13,9 +13,10 @@ body{
 }
 
 .sidebar{
-    background-color: #d31919;
+    background-color: #121212;
     width: 340px;
     border-radius: 1rem;  /*16px*/
+    margin-right: 0.5rem;
 }
 
 .main-content{
@@ -23,6 +24,7 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .music-player{
@@ -105,8 +107,8 @@ a{
     background-color: #212121;
     height: 8rem;
     border-radius: 0.75rem;
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 1rem 1.25rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
 }
 
 .box-p1{
@@ -119,8 +121,93 @@ a{
     opacity: 0.9;
 }
 
-.badge{
+.badges{
     background-color: white;
     border: none;
     border-radius: 100px;
+    padding: 0.25rem 1rem ;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons {
+    font-size: 1.5rem;
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-item{
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards{
+    background-color: #212121;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
 }
