@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+p,
+div{
+    border: 2px solid black;
+    margin: 15px auto;
+    padding: 15px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+div{
+    height: 80px;
+}
